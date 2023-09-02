@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Online Shopping | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="colored-bg">
+        <div class="form-container">
+            <form method="post" action="../WebOnlineShoppingRESTProject/rest/shopping/addCustomer">
+                <h1 class="title">Add New Customer</h1>
+                <h2>Complete the following fields to add a new customer:</h2>
+
+                <div class="label-field">
+                    <label for="customer-id" class="id">Customer ID:</label>
+                    <input  type="text" name="customerId" id="customer-id" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="customer-fname" class="name">First Name:</label>
+                    <input type="text" name="customer_FName" id="customer-fname" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="customer-lname" class="name">Last Name:</label>
+                    <input type="text" name="customer_LName" id="customer-lname" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="customer-email" class="name">Email:</label>
+                    <input type="text" name="email" id="customer-email" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="customer-address" class="address">Address:</label>
+                    <input type="text" name="address" id="customer-address" size="20" />
+                </div>
+
+                <br>
+                <div class="buttons">
+                    <input type="submit" name="submit" value="Submit Customer Info" class="submit"/> 
+                    <input type="reset" name="bcancel" value="Cancel" class="cancel"/>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

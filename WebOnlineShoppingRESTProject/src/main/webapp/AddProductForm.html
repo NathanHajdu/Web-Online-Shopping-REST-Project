@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Online Shopping | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="colored-bg">
+        <div class="form-container">
+            <form method="post" action="../WebOnlineShoppingRESTProject/rest/shopping/addProduct">
+                <h1 class="title">Add New Product</h1>
+                <h2>Complete the following fields to add a new product:</h2>
+
+                <div class="label-field">
+                    <label for="product-id" class="id">Product ID:</label>
+                    <input  type="text" name="productId" id="product-id" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="product-name" class="name">Product Name:</label>
+                    <input type="text" name="productName" id="product-lname" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="product-price" class="price">Price:</label>
+                    <input type="text" name="productPrice" id="product-price" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="product-description">Description:</label>
+                    <textarea name="productDesc" id="product-description" rows="5" cols="20"></textarea>
+                </div>
+
+                <br>
+                <div class="buttons">
+                    <input type="submit" name="submit" value="Submit Product Info" class="submit"/> <input type="reset" name="bcancel"
+                        value="Cancel" class="cancel"/>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

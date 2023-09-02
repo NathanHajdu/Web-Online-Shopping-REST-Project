@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Online Shopping | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="colored-bg">
+        <div class="form-container">
+            <form method="post" action="../WebOnlineShoppingRESTProject/rest/shopping/addProductOrder">
+                <h1 class="title">Add Product to Existing Order</h1>
+                <h2>Complete the following fields to add an item to an existing order:</h2>
+
+                <div class="label-field">
+                    <label for="customer-id" class="id">Customer ID:</label>
+                    <input type="text" name="customerId" id="customer-id" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="order-id" class="id">Order ID:</label>
+                    <input type="text" name="orderId" id="order-id" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="status" class="status">Status:</label>
+                    <input type="text" name="status" id="status" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="product-id" class="id">Product ID:</label>
+                    <input type="text" name="productId" id="product-id" size="20" />
+                </div>
+                <div class="label-field">
+                    <label for="quantity" class="quantity">Quantity:</label>
+                    <input type="text" name="quantity" id="quantity" size="20" />
+                </div>
+
+                <br>
+                <div class="buttons">
+                    <input type="submit" name="submit" value="Add Order Item" class="submit" />
+                    <input type="reset" name="cancel" value="Cancel" class="cancel" />
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

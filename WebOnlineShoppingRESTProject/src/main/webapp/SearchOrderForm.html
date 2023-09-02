@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Online Shopping | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="colored-bg">
+        <div class="form-container">
+            <form method="get" action="../WebOnlineShoppingRESTProject/rest/shopping/searchOrder">
+                <h1 class="title">Search Order</h1>
+                <h2>Enter an Order ID to search for an Order:</h2>
+
+                <div class="label-field">
+                    <label for="order-id" class="id">Order ID:</label>
+                    <input type="text" name="orderId" id="order-id" size="20" />
+                </div>
+
+                <br>
+                <div class="buttons">
+                    <input type="submit" name="submit" value="Search Order Info" class="submit" /> <input type="reset"
+                        name="bcancel" value="Cancel" class="cancel" />
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
